@@ -1,5 +1,5 @@
 {
-    "name": "Test radio",
+    "name": "Test neopixel T",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -9,7 +9,9 @@
         "Grove": "github:seeed-studio/pxt-grove#v0.5.0",
         "pxt-kitronik-motor-driver": "github:kitronikltd/pxt-kitronik-motor-driver#v0.0.7",
         "joystickbit": "github:tinkertanker/pxt-joystickbit#v1.0.1",
-        "CODO": "github:codomicrobit/pxt-codo#f19ac96dae3db6f60feb76a3178066c3ce3d19a8"
+        "CODO": "github:codomicrobit/pxt-codo#f19ac96dae3db6f60feb76a3178066c3ce3d19a8",
+        "neopixel": "github:microsoft/pxt-neopixel#v0.7.5",
+        "bitmaker": "github:TinkerGen/pxt-BitMaker#v0.1.4"
     },
     "files": [
         "main.blocks",

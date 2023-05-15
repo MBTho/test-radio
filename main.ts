@@ -1,15 +1,9 @@
-input.onButtonPressed(Button.A, function () {
-    radio.sendString("A")
+let strip = neopixel.create(DigitalPin.P13, 4, NeoPixelMode.RGB)
+strip.setBrightness(5)
+strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
+strip.show()
+basic.forever(function () {
+    basic.pause(100)
+    strip.rotate(1)
+    strip.show()
 })
-input.onButtonPressed(Button.AB, function () {
-    radio.sendString("")
-})
-radio.onReceivedString(function (receivedString) {
-    basic.showString(receivedString)
-})
-input.onButtonPressed(Button.B, function () {
-    radio.sendString("B")
-})
-radio.setFrequencyBand(70)
-radio.setGroup(70)
-radio.setTransmitPower(7)
